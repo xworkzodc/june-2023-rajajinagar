@@ -25,18 +25,16 @@ class Knife{
 		   this(sharp);
 		   this.material=material;
 		   System.out.println("invoking boolean,string const of Knife");
-	   }
-	   
+	   }	   	   	   	   	   	  	   
 	   Knife(boolean sharp,String material,double price)
 	   {
 		   this(sharp,material);
 		   this.price=price;
 		   System.out.println("invoking boolean,string,double const of Knife");
-	   }
-	   
+	   }	   
 	   Knife(boolean sharp,String material,double price,char size )
 	   {
-		   this(sharp,material,price);
+		   this(sharp,material,price);//same class chaining
 		   this.size=size;
 		   System.out.println("invoking boolean,string,double,char const of Knife");
 	   }
